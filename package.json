@@ -1,0 +1,35 @@
+{
+  "name": "projetotesteapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon -e ts,json src/server.ts",
+    "redis": "redis-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "ioredis": "^5.4.1",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.11.5",
+    "pg-hstore": "^2.3.4",
+    "redis": "^4.6.13",
+    "sequelize": "^6.37.3",
+    "validator": "^13.11.0",
+    "zod": "^3.23.4"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.21",
+    "@types/ioredis": "^5.0.0",
+    "@types/jsonwebtoken": "^9.0.6",
+    "@types/sequelize": "^4.28.20",
+    "@types/validator": "^13.11.9"
+  }
+}
