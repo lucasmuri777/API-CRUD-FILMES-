@@ -33,3 +33,17 @@ No corpo da requisição deve conter o nome do filme e a descrição do mesmo, s
 ### Deletar filme
 
 - DELETE `/admin/filmes/:id` ( Deleta um filme pelo ID )
+
+
+### .ENV
+- DEFAULT_TOKEN `Token padrão pra regra de login`
+- PORT `Porta que vai rodar o express`
+- SECRET_KEY `Secret key para gerar o token JWT`
+
+- PG_DB `Nome do banco de dados`
+- PG_USER `User do banco de dados`
+- PG_PASSWORD `Password do banco de dados`
+- PG_PORT `Porta do banco de dados`
+
+- REDIS_URL `Url do Redis`
+- REDIS_PASSWORD `Senha do Redis`
