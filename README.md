@@ -12,7 +12,7 @@ Ao logar o seu token fica salvo no cache do redis fazendo assim não ser necess�
 
 ### Regra do login
 
-No corpo da requisição de login deve acompanhar a senha de login que é a data atual, assim gerando um token JWT para usar nas requisições da API
+No corpo da requisição de login deve acompanhar a senha de login que é a data atual (ou dia seguinte por conta do server), assim gerando um token JWT para usar nas requisições da API
 
 ## Rotas privadas (FILMES)
 
