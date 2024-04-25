@@ -25,9 +25,6 @@ export const login: RequestHandler = async(req, res) => {
         {expiresIn: "1d"}
     )
 
-    
-    await setRedis(`token`, token);
-
     res.json({
         token
     });
@@ -35,29 +32,19 @@ export const login: RequestHandler = async(req, res) => {
 }
 
 export const validate: RequestHandler = async(req, res, next) => {
-    let hasRedis = await validateWithRedis();
-    if(!req.headers.authorization && hasRedis == false){
+   
+    if(!req.headers.authorization){
         return res.status(403).json({error: "Acesso Negado"});
         
     }
 
-    if(req.headers.authorization){
-        let auth = await validateWithHeader(req.headers.authorization);
-        if(auth) return next();
-    }
-
-    if(hasRedis) return next();
+    let auth = await validateWithHeader(req.headers.authorization);
+    if(auth) return next();
 
     return res.status(403).json({error: "Acesso Negado"});
    
 }  
 
-const validateWithRedis = async()=>{
-    let hasRedis = await getRedis(`token`);
-    if(!hasRedis) return false;
-
-    return await decodedToken(hasRedis);
-}
 const validateWithHeader = async(header: string)=>{
     if(!header){
         return false   
