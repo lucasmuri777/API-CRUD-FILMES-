@@ -8,7 +8,7 @@ Crud de filmes básico com autenticação JWT
 ## Rota de autenticação (JWT)
 - GET `admin/login`
 
-Ao logar o seu token fica salvo no cache do redis fazendo assim não ser necessário passar no header das rotas privadas o token
+Ao logar o seu token JWT é gerado para você usar nas rotas privadas do CRUD de filmes
 
 ### Regra do login
 
