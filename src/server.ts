@@ -19,6 +19,7 @@ server.use(cors());
 server.use(express.static(path.join(__dirname, 'public')));
 
 //Liberando o servidor para pegar dados via POST
+server.use(express.json());
 server.use(express.urlencoded({extended: true}));
 
 //server.use('/api', api);

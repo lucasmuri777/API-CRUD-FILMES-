@@ -12,7 +12,7 @@ Ao logar o seu token JWT é gerado para você usar nas rotas privadas do CRUD de
 
 ### Regra do login
 
-No corpo da requisição de login deve acompanhar a senha de login que é a data atual (ou dia seguinte por conta do server), assim gerando um token JWT para usar nas requisições da API
+No corpo da requisição de login deve acompanhar a senha de login que é a data atual, dia, mês e ano (ou dia seguinte por conta do server, ex: 25042024), assim gerando um token JWT para usar nas requisições da API
 
 ## Rotas privadas (FILMES)
 

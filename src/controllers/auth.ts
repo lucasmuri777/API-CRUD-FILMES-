@@ -12,7 +12,8 @@ export const login: RequestHandler = async(req, res) => {
         password: z.string(),
     })
     const body = loginSchema.safeParse(req.body);
-    
+    console.log(body)
+    console.log(req.body)
     if(!body.success) return res.json({error: "Dados inválidos"});
 
     if(!auth.validatePassword(body.data.password)){
