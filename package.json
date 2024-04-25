@@ -33,5 +33,9 @@
     "@types/jsonwebtoken": "^9.0.6",
     "@types/sequelize": "^4.28.20",
     "@types/validator": "^13.11.9"
+  },
+  "engines": {
+    "node": "16.x"
   }
+
 }
