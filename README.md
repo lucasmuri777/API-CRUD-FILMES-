@@ -6,7 +6,7 @@ Crud de filmes básico com autenticação JWT
 `Node.js`,`TypeScript`, `Express`, `Jsonwebtoken`, `PostgreSQL`, `Sequelize`, `Zod`, `redis`
 
 ## Rota de autenticação (JWT)
-- GET `admin/login`
+- POST `admin/login`
 
 Ao logar o seu token JWT é gerado para você usar nas rotas privadas do CRUD de filmes
 

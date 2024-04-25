@@ -5,7 +5,7 @@ import { getRedis } from "../services/redisConfig";
 
 const router = Router();
 
-router.get('/login', auth.login);
+router.post('/login', auth.login);
 
 router.get('/ping', auth.validate, async(req, res) => {
     
