@@ -5,6 +5,7 @@ export const getAll = async() => {
     try{
         return await Filmes.findAll();
     }catch(err){
+        console.log(err)
        return false;
     }
 }
