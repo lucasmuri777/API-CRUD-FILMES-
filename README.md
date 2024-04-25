@@ -47,4 +47,4 @@ No corpo da requisição deve conter o nome do filme e a descrição do mesmo, s
 
 - REDIS_URL `Url do Redis`
 - REDIS_PASSWORD `Senha do Redis`
-- DATABASE_URL `url doo banco de dados`
+- DATABASE_URL `url do banco de dados`
